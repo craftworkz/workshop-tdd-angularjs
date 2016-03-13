@@ -5,9 +5,15 @@
   <title>Test Driven Development: AngularJS</title>
 </head>
 <body ng-app="taskApp">
-  <div class="container" ng-controller="TasksController as vm" ng-include="app/feature-tasks/tasks.tpl.html">
+  <div class="container" ng-controller="OverviewController as vm" ng-include="'app/feature-overview/overview.tpl.html'">
   </div>
   <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
   <script type="text/javascript" src="node_modules/angular-resource/angular-resource.min.js"></script>
+
+  <!-- Don't edit, follow naming conventions -->
+  <!-- injector:js -->
+  <script src="app/application.module.js"></script>
+  <script src="app/feature-overview/overview.controller.js"></script>
+  <!-- endinjector -->
 </body>
 </html>

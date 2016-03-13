@@ -34,7 +34,7 @@
           relative: true,
           addRootSlash: false
         },
-        dev: {
+        dist: {
           files: {
             'index.html': [
               'app/**/*.module.js',
@@ -54,6 +54,10 @@
         options: {
           atBegin: true
         },
+        js: {
+          files: ['app/**/*.js', '!app/**/*.spec.js'],
+          tasks: ['injector:dist']
+        },
         lint: {
           files: ['app/**/*.js'],
           tasks: ['jshint:dist']
@@ -69,7 +73,7 @@
     grunt.registerTask('default', ['jshint:dist', 'karma:dist']);
 
     // Watch task, necessary when developing in an environment that doesn't support Maven
-    grunt.registerTask('watch', ['jshint:dist', 'watch:lint', 'watch:test']);
+    grunt.registerTask('watch', ['jshint:dist', 'watch:js', 'watch:lint', 'watch:test']);
 
     require('load-grunt-tasks')(grunt);
     require('time-grunt')(grunt);
