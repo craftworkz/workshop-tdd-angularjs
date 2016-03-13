@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="node_modules/milligram/dist/milligram.min.css"/>
+  <title>Test Driven Development: AngularJS</title>
+</head>
+<body ng-app="taskApp">
+  <div class="container" ng-controller="TasksController as vm" ng-include="app/feature-tasks/tasks.tpl.html">
+  </div>
+  <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="node_modules/angular-resource/angular-resource.min.js"></script>
+</body>
+</html>

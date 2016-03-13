@@ -4,3 +4,4 @@ mvnw.cmd
 .idea/
 .mvn/
 target/
+node_modules/

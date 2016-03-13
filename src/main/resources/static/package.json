@@ -1,0 +1,29 @@
+{
+  "name": "test-driven-angularjs",
+  "version": "0.0.1-SNAPSHOT",
+  "dependencies": {
+    "milligram": "~1.1.0",
+    "angular": "~1.5.0",
+    "angular-resource": "~1.5.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-karma": "~0.12.1",
+    "grunt-injector": "~0.6.1",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+
+    "load-grunt-tasks": "~3.4.1",
+    "time-grunt": "~1.3.0",
+
+    "jshint-stylish": "~2.1.0",
+
+    "karma": "~0.13.22",
+    "karma-jasmine": "~0.3.7",
+    "karma-phantomjs-launcher": "~1.0.0",
+    "jasmine-sinon": "~0.4.0",
+    "sinon": "~1.17.3",
+
+    "angular-mocks": "~1.5.0"
+  }
+}
