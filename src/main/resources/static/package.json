@@ -2,7 +2,7 @@
   "name": "test-driven-angularjs",
   "version": "0.0.1-SNAPSHOT",
   "dependencies": {
-    "milligram": "~1.1.0",
+    "skeleton-css": "~2.0.4",
     "angular": "~1.5.0",
     "angular-resource": "~1.5.0"
   },

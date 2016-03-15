@@ -1,1 +1,20 @@
-<h1>Hello world</h1>
+<form>
+  <h1>My tasks</h1>
+  <div class="row" ng-repeat="task in vm.tasks | orderBy:'description' track by task.id">
+    <div class="nine columns">
+      <input type="checkbox" /> {{task.description}}
+    </div>
+    <div class="three columns">
+      <button class="button u-full-width">Delete</button>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="nine columns">
+      <input type="text" placeholder="Description of the task" class="u-full-width" />
+    </div>
+    <div class="three columns">
+      <button type="submit" class="button-primary u-full-width">Add</button>
+    </div>
+  </div>
+</form>
