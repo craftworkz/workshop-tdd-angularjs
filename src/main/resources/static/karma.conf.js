@@ -8,7 +8,9 @@
         'node_modules/angular/angular.js',
         'node_modules/angular-resource/angular-resource.js',
         'node_modules/angular-mocks/angular-mocks.js',
-        'node_modules/sinon/lib/sinon.js',
+        'node_modules/angular-animate/angular-animate.js',
+        'node_modules/angular-toastr/dist/angular-toastr.js',
+        'node_modules/sinon/pkg/sinon.js',
         'node_modules/jasmine-sinon/lib/jasmine-sinon.js',
         'app/application.module.js',
         'app/**/*.js'

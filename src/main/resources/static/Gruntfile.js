@@ -17,12 +17,12 @@
       karma: {
         dist: {
           options: {
-            configFile: 'karma.config.js'
+            configFile: 'karma.conf.js'
           }
         },
         continuous: {
           options: {
-            configFile: 'karma.config.js',
+            configFile: 'karma.conf.js',
             singleRun: false
           }
         }

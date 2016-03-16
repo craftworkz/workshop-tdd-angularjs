@@ -1,17 +1,17 @@
-<form>
+<form ng-submit="vm.add(vm.task)">
   <h1>My tasks</h1>
   <div class="row" ng-repeat="task in vm.tasks | orderBy:'description' track by task.id">
     <div class="nine columns">
-      <input type="checkbox" /> {{task.description}}
+      <input type="checkbox" ng-model="task.completed" ng-change="vm.update(task)" /> {{task.description}}
     </div>
     <div class="three columns">
-      <button class="button u-full-width">Delete</button>
+      <button class="button u-full-width" type="button" ng-click="vm.remove(task)">Delete</button>
     </div>
   </div>
   <hr />
   <div class="row">
     <div class="nine columns">
-      <input type="text" placeholder="Description of the task" class="u-full-width" />
+      <input type="text" placeholder="Description of the task" class="u-full-width" ng-model="vm.task.description" />
     </div>
     <div class="three columns">
       <button type="submit" class="button-primary u-full-width">Add</button>
